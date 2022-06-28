@@ -15,11 +15,12 @@ export default function Plot() {
     const params = useParams();
     console.log(params, plot);
     return (
-        <article>
-            <h3>
-                Plot {plot.id}: {plot.name} {plot?.vegetable.emoji}
-            </h3>
-            <p>{plot.note}</p>
-        </article>
+      <article>
+        <h3>
+          Plot {plot.id}: {plot.name} {plot?.vegetable.emoji}
+        </h3>
+        <p>{plot.note}</p>
+        <p>date: {plot.date}</p>
+      </article>
     );
 }
